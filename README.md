@@ -19,6 +19,19 @@ conda activate dlbasics
 pip install -r requirements.txt
 ```
 
+（私のローカル環境）
+```bash
+conda create -n dlbasics python=3.10 -y
+conda activate dlbasics
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
+conda install autopep8 mypy ipykernel jupyter notebook -y
+pip install -r requirements.txt
+
+python -m ipykernel install --name dlbasics
+jupyter kernelspec list
+```
+
+
 ## ベースラインモデルを動かす
 
 ### 訓練
