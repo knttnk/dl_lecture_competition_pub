@@ -3,6 +3,8 @@ data/*
 Images/*
 
 outputs/
+!outputs/**/*.npy
+outputs/2024-07-18/09-04-24/submission_last.npy
 preprocess.py
 eval_omnicampus.py
 .github/
