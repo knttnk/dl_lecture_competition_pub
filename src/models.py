@@ -32,10 +32,11 @@ class MyConvClassifier(nn.Module):
         #     # MyConvBlock(hid_dim, hid_dim, p_drop=0.01, k=3),
         # )
         self.blocks = nn.Sequential(
-            ConvBlock(in_channels, hid_dim, p_drop=0.02),
-            ConvBlock(hid_dim, hid_dim, p_drop=0.02),
-            ConvBlock(hid_dim, hid_dim, p_drop=0.02),
-            ConvBlock(hid_dim, hid_dim, p_drop=0.02),
+            ConvBlock(in_channels, hid_dim, p_drop=0.03),
+            ConvBlock(hid_dim, hid_dim, p_drop=0.03),
+            ConvBlock(hid_dim, hid_dim, p_drop=0.03),
+            ConvBlock(hid_dim, hid_dim, p_drop=0.03),
+            ConvBlock(hid_dim, hid_dim, p_drop=0.03),
         )
 
         self.head = nn.Sequential(
